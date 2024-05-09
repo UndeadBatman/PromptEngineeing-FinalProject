@@ -4,3 +4,4 @@ The game aims to use Chat API to create interacting and unique worlds for the pl
 Making a new and dynamic experience for every game campaign.
 For now, the classes for the players are divide to three archtypes: Fighter, Scholor, or Rogue. Each with unique gear, weapons, skill, and abilites.
 If you wish to demo and play the game yourself, You must enter your OpenAI API key in the "script.js". It must replace "API_KEY_HERE" with your API key.
+# YouTube Demo Video: https://youtu.be/75Do_Tgxul0
