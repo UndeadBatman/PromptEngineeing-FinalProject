@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="gameUI" class="game-ui">
+        <div id="playerStats" class="side-column">
+            <div id="resources">
+                <div id="health">Health: </div>
+                <div id="stamina">Stamina: </div>
+                <div id="mana">Mana: </div>
+                <div id="class">Class: </div>
+                <div id="level">Level: </div>
+                <div id="experienceBar">Experience: <progress value="0" max="100"></progress></div>
+            </div>
+            <!-- Player stats like health, stamina, mana/power -->
+            <div id="skills">
+                <p>Skills:</p>
+                <ul>
+                    <div id="skill1"></div>
+                    <div id="skill2"></div>
+                    <div id="skill3"></div>
+                    <div id="skill4"></div>
+                    <div id="skill5"></div>
+                </ul>
+            </div>
+        </div>
+        <div id="gameNarrative" class="main-column">
+            <div id="chatbox" class="chatbox">
+                <!-- This is where the game narrative and chat history will appear -->
+            </div>
+            <div id="actionInputArea" class="action-input-area">
+                <input type="text" id="actionInput" placeholder="Type your action...">
+                <button id="sendAction">Send</button>
+            </div>
+        </div>
+        <div id="playerActions" class="side-column">
+            <!-- Player actions and inventory will go here -->
+            <div id="abilities">
+                <p>Abilities:</p>
+                <ul>
+                    <button id="ability1"></button>
+                    <button id="ability2"></button>
+                    <button id="ability3"></button>
+                    <button id="ability4"></button>
+                    <button id="ability5"></button>
+                </ul>
+            </div>
+            <div id="actions">
+                <p>Actions:</p>
+                <ul>
+                    <button id="action1"></button>
+                    <button id="action2"></button>
+                    <button id="action3"></button>
+                    <button id="action4"></button>
+                    <button id="action5"></button>
+                    <button id="action6"></button>
+                </ul>
+            </div>
+            <div id="inventory">
+                <p>Inventory:</p>
+                <ul>
+                    <button id="item1"></button>
+                    <button id="item2"></button>
+                    <button id="item3"></button>
+                    <button id="item4"></button>
+                    <button id="item5"></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

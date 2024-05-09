@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home UI - RPG Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home-container">
+        <h1>Welcome to the RPG Adventure!</h1>
+        <form id="characterCreationForm">
+            <label for="archetype">Choose your archetype:</label>
+            <select id="archetype" name="archetype">
+                <option value="fighter">Fighter</option>
+                <option value="scholar">Scholar</option>
+                <option value="rogue">Rogue</option>
+            </select>
+        
+            <label for="backstory">Backstory:</label>
+            <textarea id="backstory" name="backstory" placeholder="Your character's backstory" required></textarea>
+        
+            <label for="worldSetting">World Setting:</label>
+            <input type="text" id="worldSetting" name="worldSetting" placeholder="e.g., Eldoria, Whispering Woods" required>
+        
+            <input type="submit" value="Start Adventure">
+        </form> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

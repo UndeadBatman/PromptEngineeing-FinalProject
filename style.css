@@ -1,0 +1,100 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+}
+
+.game-ui {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side-column {
+    width: 20%;
+    background-color: #16213e;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.main-column {
+    flex-grow: 1;
+    background-color: #16213e;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 20px);
+    box-sizing: border-box;
+    width: 55%;
+}
+
+/* Chatbox for game narrative and chat history */
+.chatbox {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* Scrollable content */
+    margin-bottom: 10px;
+    /* Space between chatbox and input area */
+    background-color: #16213e;
+    /* Color for contrast */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding inside the chatbox */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    /* Shadow for depth */
+}
+
+.gametext {
+    margin-bottom: 15px; /* This will add space below each message */
+    padding: 5px; /* This will add some padding inside the message for better readability */
+    border-radius: 5px; /* Optional: Rounds the corners of the message bubble */
+}
+
+/* Action input area for player to type actions */
+.action-input-area {
+    display: flex;
+    justify-content: space-between;
+    /* Space between input and button */
+    align-items: center;
+}
+
+/* Style for the action input */
+#actionInput {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    /* Space between input and button */
+    border-radius: 4px;
+    border: none;
+}
+
+/* Style for the send action button */
+#sendAction {
+    padding: 10px 20px;
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#sendAction:hover {
+    background-color: #a1253b;
+    /* Darker on hover */
+}
+
+/* Add additional styling for buttons, inputs, and other elements as needed */
